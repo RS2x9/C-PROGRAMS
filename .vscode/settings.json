@@ -1,0 +1,8 @@
+{
+    "editor.fontFamily": "barett street,Consolas, 'Courier New', monospace",
+    "files.associations": {
+        "P9.C": "cpp",
+        "stdio.h": "c",
+        "ctype.h": "c"
+    }
+}
