@@ -1,4 +1,5 @@
 //P5-27
+// prime number
 #include<stdio.h>
 #include<math.h>
 int main()
