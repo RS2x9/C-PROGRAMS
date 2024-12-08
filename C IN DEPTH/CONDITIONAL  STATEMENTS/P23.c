@@ -1,4 +1,5 @@
 // P5-24
+// ARMSTRONG NUMBER
 #include<stdio.h>
 #include<math.h>
 int main()
