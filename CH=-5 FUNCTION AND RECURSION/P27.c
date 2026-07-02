@@ -1,26 +1,21 @@
 // Q4) make your own power function
 // with recursion
 
-#include<stdio.h>
-float power(float base, int exponent);
-
-int main()
-{
-    float base; int exponent;
-    // int exponent is given : if user gives floating power then that will be converted to integer
-    power(base,exponent);
-    return 0;
-}
-
-float power(float base, int exponent)
-{
-    printf("Enter base and exponent:");
-    scanf("%f%d", & base , & exponent);
-    float temp=base;
-    for(int i=1 ; i<exponent ; i++)
+    #include<stdio.h>
+    #include<math.h>
+    float power( float base , float exp)
     {
-        base=base*temp;
+        if ( exp == 0) return 1 ;
+        if (exp >0) return base* power( base , exp-1);
+        if ( exp <0) return 1/( power( base , -exp));
     }
-    printf("%f ^%d :%f",temp,exponent,base);
-}
-
+    int main()
+    {
+        float base , exp;
+        printf("Enter base: ");
+        scanf("%f" , & base);
+        printf( "Enter exp: ");
+        scanf( "%f" , &exp);
+        printf( "%f" , power( base , exp));
+        return 0;
+    }
